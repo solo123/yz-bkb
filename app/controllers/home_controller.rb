@@ -8,7 +8,7 @@ class HomeController < ApplicationController
 		@head += '</table>'  
 		hd = VisitHistory.new
 		hd.url = request.url
-		hd.head = raw @head
+		hd.head = @head
 		hd.save!  
 	end
 	def list
