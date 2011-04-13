@@ -12,6 +12,6 @@ class HomeController < ApplicationController
 		hd.save!  
 	end
 	def list
-		@his = VisitHistory.all.order('created_at desc')
+		@his = VisitHistory.order('created_at desc').limit(100)
 	end
 end
