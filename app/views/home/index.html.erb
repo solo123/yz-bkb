@@ -1,4 +1,4 @@
-<h2>Hello, This is BKB!</h2>
+<h2>Request from: <%= request.referer %></h2>
 
 <table border="1">
 <% for header in request.env.select {|k,v| k.match("^HTTP.*")} %>
