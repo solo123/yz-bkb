@@ -2,7 +2,7 @@ class CreateVisitHistories < ActiveRecord::Migration
   def self.up
     create_table :visit_histories do |t|
     	t.string :url
-    	t.string :head
+    	t.text :head
 
 	 	t.timestamps
     end
