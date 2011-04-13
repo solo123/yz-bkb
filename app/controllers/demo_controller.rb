@@ -4,6 +4,8 @@ class DemoController < ApplicationController
 		if params[:p]
 			if params[:p] == 'simplebooktype'
 				render 'book_list_brief.xml.erb'
+			elsif params[:p] == 'booktypeinfo'
+				render 'book_types.xml.erb'
 			else
 				render 'book_list.xml.erb'
 			end
