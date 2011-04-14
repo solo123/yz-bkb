@@ -19,6 +19,8 @@ class DemoController < ApplicationController
 			render 'book_type.xml.erb'
 		elsif params[:chapterid] && params[:page]
 			render 'book_content.text.erb'
+		elsif params[:sbookName]
+			render 'book_search.xml.erb'
 		end
 	end
 	def sync
